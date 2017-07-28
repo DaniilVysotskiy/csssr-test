@@ -47,11 +47,6 @@ body
     margin-bottom 1em
   &__group
     margin-bottom 50px
-  &__input
-    display flex
-    align-items flex-end
-    &:not(:last-child)
-      margin-bottom 2em
   &__checkbox-wrapper
     display flex
     flex-flow raw wrap
@@ -60,29 +55,9 @@ body
     flex-direction column
     width 33.33%
     min-width 250px
-  &__checkbox
-    margin-bottom 10px
-    & > input[type="checkbox"]:checked + .label--checkbox::after
-      content ''
-      position absolute
-      width 20px
-      height 20px
-      top -10px
-      left 4px
-      sprite $check
   &__radio-group
     display flex
     flex-flow raw wrap
-  &__radio
-    margin-bottom 10px
-    & > input[type="radio"]:checked + .label--radio::after
-      content ''
-      position absolute
-      width 20px
-      height 20px
-      top 4px
-      left 7px
-      sprite $radio_check
 .textarea
   flex-grow 1
   display inline
@@ -103,54 +78,6 @@ body
   margin-right 20px
   cursor pointer
   user-select none
-  &--checkbox
-    display inline-block
-    font-size 21px
-    color #000
-    padding-left 30px
-    &::before
-      content ''
-      position absolute
-      width 20px
-      height 20px
-      left 0
-      sprite $checkbox
-  &--radio
-    display inline-block
-    font-size 21px
-    color #000
-    padding-left 30px
-    &::before
-      content ''
-      position absolute
-      width 20px
-      height 20px
-      top -3px
-      left 0
-      sprite $radio
-.input
-  position relative
-  padding-left 10px
-  padding-bottom 5px
-  background-color transparent
-  border none
-  width: 100%
-  font-family: Courier New, sans-serif
-  font-size 30px
-  color not_black
-  &__wrapper
-    flex-grow 1
-    position relative
-    &::after
-      content ''
-      position absolute
-      left 0
-      bottom 0
-      width 100% !important
-      sprite $line
-    &--date
-      flex-grow 0
-      width 210px
 .range
   position relative
   &__progress

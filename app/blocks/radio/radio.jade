@@ -1,0 +1,4 @@
+mixin radio(id, name, content, check)
+	+b.radio&attributes(attributes)
+		input(type="radio" id=id name=name value=id hidden checked=check)
+		label.label.label--radio(for=id)!=content

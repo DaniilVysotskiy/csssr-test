@@ -1,0 +1,5 @@
+mixin input(type, id, value, content)
+	+b.input&attributes(attributes)
+		label.label(for="name")!=content
+		.input__wrapper
+			input.input__field(type=type name=id id=id value=value autocomplete="off")
